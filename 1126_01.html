@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        body {
+            background-color: #f3f3f3;
+            font-family: 'poppins', sans-serif;
+            background-image: url("./images/full_bg_h3.jpg");
+        }
+
+        .container {
+            box-sizing: border-box;
+            width: 300px;
+            border: 5px solid #999;
+            border-radius: 10px;
+            padding: 30px 20px;
+            margin: 50px 0 0 50px;
+            background-color: #fff;
+            /* 상하 좌우 */
+
+            background-image: url("./images/irangi_1.png"), url("./images/irangi_2.png");
+            background-size: 50px auto, 100px auto;
+            background-repeat: no-repeat;
+            background-position: right 10px top 10px, right 10px bottom 10px;
+
+        }
+
+        .container h1 {
+            background-image: url("./images/icons/cafe.svg");
+            background-repeat: no-repeat;
+            padding-left: 34px;
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .container p {
+            font-size: 14px;
+            line-height: 1.2;
+            margin-top: 14px;
+            padding-right: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <article class="container">
+        <h1>Card Title</h1>
+        <p>
+            이 카드는 CSS Box Model을 이해하기 위한 예제입니다.
+        </p>
+        <p>
+            margin, padding, border, border-radius, 크기등을 다양하게 조정해보세요
+        </p>
+    </article>
+</body>
+
+</html>
