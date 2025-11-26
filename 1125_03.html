@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 암묵적 레이블 -->
+    <h1>좋아하는 과목을 모드 고르시오</h1>
+    <ul>
+        <li>
+            <label><input type="checkbox" name="favorite_subject">HTML</label>
+        </li>
+        <li>
+            <label><input type="checkbox" name="favorite_subject">CSS</label>
+        </li>
+        <li>
+            <label><input type="checkbox" name="favorite_subject">Javascript</label>
+        </li>
+    </ul>
+
+    <hr>
+    <h1>수강하실 과목을 한 개만 고르시오</h1>
+    <ul>
+        <li>
+            <label><input type="radio" name="subject">HTML</label>
+        </li>
+        <li>
+            <label><input type="radio" name="subject">Cursor</label>
+        </li>
+        <li>
+            <label><input type="radio" name="subject">MCP</label>
+        </li>
+    </ul>
+
+    <!-- 명시적 레이블 -->
+    <hr>
+    <table>
+        <tr>
+            <th scope="row"><lable for="contact_title">제목</lable></th>
+            <td>
+                <input type="text" placeholder="제목을 입력하세요" id="contact_title">
+            </td>
+        </tr>
+        <tr>
+            <th scope="row"><lable for="contact_message">내용</lable></th>
+            <td>
+                <textarea placeholder="문의내용을 입력하세요" id="contact_message"></textarea>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
