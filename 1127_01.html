@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        body {
+            background-color: #f3f4f5;
+            scroll-behavior: smooth;
+        }
+
+
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+
+            box-shadow: 0px 2px 5px;
+        }
+
+        .btn-top {
+            background-color: pink;
+
+            position: fixed;
+            bottom: 5%;
+            right: 10%;
+        }
+
+        .btn-left {
+            background-color: skyblue;
+            position: absolute;
+            left: -50px;
+            top: calc(50% - 50px);
+            z-index: 2;
+        }
+
+        .btn-left2 {
+            background-color: red;
+            position: absolute;
+            left: -30px;
+            top: calc(50% - 50px);
+            z-index: 1;
+        }
+
+        .btn-right {
+            background-color: skyblue;
+            position: absolute;
+            right: -50px;
+            top: calc(50% - 50px);
+        
+        }
+        .btn-center {
+            background-color: skyblue;
+            position: absolute;
+            right: calc(50% - 50px);
+            top: calc(50% - 50px);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+
+            border: 1px solid #333;
+            padding: 20px;
+            border-radius: 20px;
+            line-height: 2;
+            margin: 50px auto;
+            font-size: 20px;
+            font-family: sans-serif;
+
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem sapiente possimus totam unde
+            nihil
+            quae vel voluptate, in autem illo eveniet deserunt quos enim! Molestias consectetur odit qui minus.
+            Consectetur assumenda vero deserunt, vitae tempore dolor officia dolorem odit eum velit deleniti iusto
+            delectus
+            iure
+            voluptatem similique ea fugiat voluptas quidem itaque sapiente suscipit repellat? Nesciunt temporibus
+            recusandae
+            deserunt.
+        </p>
+        <!-- <p> Voluptatem unde dignissimos ex provident, maxime libero fuga eligendi placeat, ipsum ipsa beatae, tempora
+            tenetur
+            tempore reprehenderit. Omnis similique optio voluptatibus doloremque voluptates sunt odio eos magnam.
+            Exercitationem, rem minus?
+        </p>
+        <p> Quas officiis, eos ex molestiae tempore itaque at. Voluptatibus saepe nesciunt voluptate illum alias odit.
+            Ea
+            nesciunt dolor consequuntur, vitae earum reiciendis ipsa assumenda modi in, incidunt fugit laboriosam
+            ratione?
+            Voluptas dolore illo, nemo laborum fugiat eveniet distinctio, natus quidem quasi ut architecto tenetur
+            nostrum
+            alias
+            est corrupti aut esse sequi voluptate. Earum harum, iusto quos aspernatur at debitis quisquam.
+        </p>
+        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae exercitationem sapiente possimus totam unde
+            nihil
+            quae vel voluptate, in autem illo eveniet deserunt quos enim! Molestias consectetur odit qui minus.
+            Consectetur assumenda vero deserunt, vitae tempore dolor officia dolorem odit eum velit deleniti iusto
+            delectus
+            iure
+            voluptatem similique ea fugiat voluptas quidem itaque sapiente suscipit repellat? Nesciunt temporibus
+            recusandae
+            deserunt.
+        </p>
+        <p> Voluptatem unde dignissimos ex provident, maxime libero fuga eligendi placeat, ipsum ipsa beatae, tempora
+            tenetur
+            tempore reprehenderit. Omnis similique optio voluptatibus doloremque voluptates sunt odio eos magnam.
+            Exercitationem, rem minus?
+        </p>
+        <p> Quas officiis, eos ex molestiae tempore itaque at. Voluptatibus saepe nesciunt voluptate illum alias odit.
+            Ea
+            nesciunt dolor consequuntur, vitae earum reiciendis ipsa assumenda modi in, incidunt fugit laboriosam
+            ratione?
+            Voluptas dolore illo, nemo laborum fugiat eveniet distinctio, natus quidem quasi ut architecto tenetur
+            nostrum
+            alias
+            est corrupti aut esse sequi voluptate. Earum harum, iusto quos aspernatur at debitis quisquam.
+        </p> -->
+
+        <a href="#" class="btn btn-top">
+            TOP
+        </a>
+
+        <button type="button" class="btn btn-left">LEFT</button>
+        <button type="button" class="btn btn-left2">LEFT2</button>
+        <button type="button" class="btn btn-right">RIGHT</button>
+        <button type="button" class="btn btn-center">CENTER</button>
+
+    </div>
+</body>
+
+</html>

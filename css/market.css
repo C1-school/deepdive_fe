@@ -1,0 +1,85 @@
+body {
+  font-family: "Pretendard", sans-serif;
+  line-height: 1.2;
+  letter-spacing: -0.1px;
+}
+
+header {
+    background-color: white;
+    color: #333;
+    
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px 1px 5px grey;
+}
+
+.header-inner {
+    max-width: 1200px;    
+    height: 60px;
+    padding: 0px 20px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: pink;
+}
+
+.search-area {
+    width: 400px;
+    position: relative;
+}
+
+.search-box {
+    width: 100%;
+    padding: 10px 10px;
+
+    border-radius: 30px;
+    border: 1px solid grey;
+}
+
+.search-box:focus {
+    outline: none;
+    border: 1px solid pink;
+}
+
+.search-btn {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+
+    right: 10px;
+    top: calc(50% - 12px);
+}
+
+
+.link-area {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.link {
+    font-weight: bold;
+}
+
+.home {
+    color: pink;
+}
+
+.login {
+    display: block;
+    background-color: pink;
+    color: white;
+
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
