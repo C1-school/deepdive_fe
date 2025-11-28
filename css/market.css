@@ -1,22 +1,22 @@
 body {
-  font-family: "Pretendard", sans-serif;
-  line-height: 1.2;
-  letter-spacing: -0.1px;
+    font-family: "Pretendard", sans-serif;
+    line-height: 1.2;
+    letter-spacing: -0.1px;
+    color: rgb(50, 50, 50);
 }
 
 header {
     background-color: white;
-    color: #333;
-    
+
     position: fixed;
     width: 100%;
-    box-shadow: 0px 1px 5px grey;
+    box-shadow: 0px 1px 5px rgba(50, 50, 50, 0.1);
 }
 
 .header-inner {
     max-width: 1200px;    
     height: 60px;
-    padding: 0px 20px;
+    padding: 0px 30px;
     margin: auto;
 
     display: flex;
@@ -27,7 +27,16 @@ header {
 .title {
     font-weight: bold;
     font-size: 1.5rem;
-    color: pink;
+    color: #f9b;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+.title img {
+    width: 30px;
 }
 
 .search-area {
@@ -40,12 +49,12 @@ header {
     padding: 10px 10px;
 
     border-radius: 30px;
-    border: 1px solid grey;
+    border: 1px solid rgba(200, 200, 200, 0.5);
 }
 
 .search-box:focus {
     outline: none;
-    border: 1px solid pink;
+    border: 1px solid #f9b;
 }
 
 .search-btn {
@@ -71,15 +80,60 @@ header {
 }
 
 .home {
-    color: pink;
+    color: #f9b;
 }
 
-.login {
-    display: block;
-    background-color: pink;
-    color: white;
+.login-btn {
+    background-color: #f9b;
+}
 
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-weight: bold;
+    
+    width: fit-content;
+    height: fit-content;
     padding: 10px 20px;
     border-radius: 20px;
 }
 
+.nothing {
+    height: 60px;
+}
+
+section.hero {
+    width: 100%;
+    background: linear-gradient(90deg,rgba(219, 245, 255, 1) 0%, rgba(255, 209, 224, 1) 100%);
+}
+
+.hero-inner {
+    max-width: 1200px;
+    height: 500px;
+    padding: 0px 60px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.info h2 {
+    margin: 30px 0px 20px 0px;
+}
+
+.imoticon-btn {
+    background-color: #f9b;
+}
+
+.hero-inner img {
+    width: 500px;
+}
