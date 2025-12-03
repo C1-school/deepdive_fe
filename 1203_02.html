@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="task">
+        <button type="button" id="addTask">ADD +</button>
+    </div>
+
+    <h1>My task</h1>
+    <ul id="task-container">
+    </ul>
+
+    <script>
+        const input = document.getElementById('task');
+        const btnadd = document.getElementById('addTask');
+        const taskContainer = document.getElementById('task-container')
+        let taskList = [];
+
+        btnadd.addEventListener('click', () => {
+            const newTask = input.value.trim();
+            
+            // 유효성 검사
+            if (newTask === '') return;
+
+            // 1. data update
+            taskList = [...taskList, newTask];
+
+            // 2. rendering tasks
+            renderTasks();
+
+            // 3. reset
+            input.value = '';
+        })
+
+        function renderTasks() {
+            taskContainer.innerHTML = '';
+            taskList.forEach(task => { 
+                const li = document.createElement('li');
+                li.textContent = task;
+                taskContainer.appendChild(li);
+            })
+        }
+    </script>
+</body>
+</html>
