@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select 태그 다루기</title>
+</head>
+<body>
+    <h1>배경색을 선택하세요</h1>
+    <select id="color-selector">
+        <option>pink</option>
+        <option>magenta</option>
+        <option>skyblue</option>
+        <option>cyan</option>
+    </select>
+
+    <script>
+        const selectColor = document.getElementById('color-selector');
+        const body = document.body;
+
+        selectColor.addEventListener('change', changeBg);
+
+        function changeBg() {
+            const myColor = selectColor.value;
+            body.style.backgroundColor = myColor;
+        }
+    </script>
+</body>
+</html>
