@@ -32,7 +32,7 @@ console.log(mission3());
 // 4. 랜덤수 : 50부터 100까지의 랜덤수를 구하는 함수를 만들어 보시오. 
 function mission4() {
     return Math.floor(
-        Math.random()*51 + 1
+        Math.random()*51 + 50
     );
 }
 console.log(mission4());
@@ -42,7 +42,7 @@ console.log(mission4());
 // 5. 다음 배열에서 함수를 호출하면 랜덤으로 '가위','바위','보'중 하나가 선택되어 출력될 수 있도록 만들어보시오
 const items = ["가위", "바위", "보"];
 
-const mission5 = Math.floor(Math.random()*3);
+const mission5 = Math.floor(Math.random()*items.length);
 console.log(`당신의 선택은 ${items[mission5]}입니다.`); // 결과 '당신의 선택은 '바위' 입니다'
 
 
